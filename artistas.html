@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/artistas.css">
+    <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagens/favicon.ico">
+</head>
+
+<body class="fadein">
+    <div id="header-wrapper">
+        <div id="header" class="containerdrop">
+            <div id="logo">
+                <h1><a href="index.html"><img id="imgLogo" src="imagens/logo.png" alt=""></a></h1>
+                <!--Teste-->
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a onclick="myFunction()" class="dropbtn">ARTISTAS</a></li>
+                    <li><a href="dramaturgia.html" accesskey="2" title="">DRAMATURGIA</a></li>
+                    <li><a href="grupos.html" accesskey="3" title="">GRUPOS</a></li>
+                    <li><a onclick="myFunctionGaleria()" class="dropbtn" accesskey="4" title="">GALERIA</a></li>
+                    <li><a href="teatros.html" accesskey="5" title="">TEATROS</a></li>
+                    <div class="dropdown" id="dropdown">
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="#" onclick="tipo(event)" id="todos">TODOS</a>
+                          <a href="#" onclick="tipo(event)" id="diretor">DIREÇÃO</a>
+                          <a href="#" onclick="tipo(event)" id="ator">ATUAÇÃO</a>
+                          <a href="#" onclick="tipo(event)" id="dramaturgo">DRAMATURGIA</a>
+                          <a href="#" onclick="tipo(event)" id="pesquisador">PESQUISA</a>
+                          <a href="#" onclick="tipo(event)" id="produtor">PRODUÇÃO</a>
+                          <a href="#" onclick="tipo(event)" id="cenógrafo">CENOGRAFIA</a>
+                          <a href="#" onclick="tipo(event)" id="figurinista">FIGURINO</a>
+                          <a href="#" onclick="tipo(event)" id="maquiador">MAQUIAGEM</a>
+                        </div>
+                        <div id="myDropdownGaleria" class="dropdown-contentGaleria">
+                            <a href="#" onclick="tipoGaleria(event)" id="todos">TODOS</a>
+                            <a href="#" onclick="tipoGaleria(event)" id="teatro">TEATROS</a>
+                            <a href="#" onclick="tipoGaleria(event)" id="artista">ARTISTAS</a>
+                            <a href="#" onclick="tipoGaleria(event)" id="evento">EVENTOS</a>
+                          </div>
+                      </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="artistas">
+        <span class="grow2 espaco ator diretor" id="grimariofarias">
+            <div id="grimario" class="ator diretor grow2 artistadiv">
+                <img src="Artistas Imagens/grimariofarias.png" alt="Grimário Farias" id="grimariofarias" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="grimario" onclick="info(event)">Grimário Farias</p>
+            </div>
+        </span>
+        <span class="grow2 espaco ator" id="ivonetealbano">
+            <div id="ivonete" class="ator grow2 artistadiv">
+                <img src="Artistas Imagens/ivonetealbano.png" alt="Ivonete Albano" id="ivonetealbano" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="ivonete" onclick="info(event)">Ivonete Albano</p>
+            </div>
+        </span>
+        <span class="grow2 espaco diretor" id="leniltonteixeira">
+            <div id="lenilton" class="diretor grow2 artistadiv">
+                <img src="Artistas Imagens/leniltonteixeira.png" alt="Lenilton Teixeira" id="leniltonteixeira" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="lenilton" onclick="info(event)">Lenilton Teixeira</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="racinesantos">
+            <div id="racine" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/racinesantos.png" alt="Racine Santos" id="racinesantos" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="racine" onclick="info(event)">Racine Santos</p>
+            </div>
+        </span>
+        <span class="grow2 espaco pesquisador" id="soniaothon">
+            <div id="soniaothon" class="pesquisador grow2 artistadiv">
+                <img src="Artistas Imagens/soniaothon.png" alt="Sônia Othon" id="soniaothon" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="soniaothon" onclick="info(event)">Sônia Othon</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="ManuelSWanderley">
+            <div id="ManuelSWanderley" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Manuel S. Wanderley" id="ManuelSWanderley" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="ManuelSWanderley" onclick="info(event)">Manuel S. Wanderley</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="JorgeFernandes">
+            <div id="JorgeFernandes" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Jorge Fernandes" id="JorgeFernandes" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="JorgeFernandes" onclick="info(event)">Jorge Fernandes</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="SantaGuerra">
+            <div id="SantaGuerra" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Santa Guerra" id="SantaGuerra" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="SantaGuerra" onclick="info(event)">Santa Guerra</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="AntonioSouza">
+            <div id="AntonioSouza" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Antônio Souza" id="AntonioSouza" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="AntonioSouza" onclick="info(event)">Antônio Souza</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="UrbanoBrandao">
+            <div id="UrbanoBrandao" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Urbano Brandão" id="UrbanoBrandao" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="UrbanoBrandao" onclick="info(event)">Urbano Brandão</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="JoaquimMaranhao">
+            <div id="JoaquimMaranhao" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Joaquim Maranhão" id="JoaquimMaranhao" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="JoaquimMaranhao" onclick="info(event)">Joaquim Maranhão</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="ManoelItajuba">
+            <div id="ManoelItajuba" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Manoel Itajubá" id="ManoelItajuba" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="ManoelItajuba" onclick="info(event)">Manoel Itajubá</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="SebastiaoOliveira">
+            <div id="SebastiaoOliveira" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Sebastião Oliveira" id="SebastiaoOliveira" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="SebastiaoOliveira" onclick="info(event)">Sebastião Oliveira</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="DeolindoLima">
+            <div id="DeolindoLima" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Deolindo Lima" id="DeolindoLima" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="DeolindoLima" onclick="info(event)">Deolindo Lima</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="FranciscoCavalcanti">
+            <div id="FranciscoCavalcanti" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Francisco Cavalcanti" id="FranciscoCavalcanti" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="FranciscoCavalcanti" onclick="info(event)">Francisco Cavalcanti</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="VirgilioTrindade">
+            <div id="VirgilioTrindade" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Virgílio Trindade" id="VirgilioTrindade" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="VirgilioTrindade" onclick="info(event)">Virgílio Trindade</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="NestorLima">
+            <div id="NestorLima" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Nestor Lima" id="NestorLima" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="NestorLima" onclick="info(event)">Nestor Lima</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="JoseFilho">
+            <div id="JoseFilho" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="José Filho" id="JoseFilho" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="JoseFilho" onclick="info(event)">José Filho</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="SandovalCWanderley">
+            <div id="SandovalCWanderley" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Sandoval C. Wanderley" id="SandovalCWanderley" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="SandovalCWanderley" onclick="info(event)">Sandoval C. Wanderley</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="JorgeOliveira">
+            <div id="JorgeOliveira" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Jorge Oliveira" id="JorgeOliveira" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="JorgeOliveira" onclick="info(event)">Jorge Oliveira</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="MariaCaldas">
+            <div id="MariaCaldas" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Maria Caldas" id="MariaCaldas" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="MariaCaldas" onclick="info(event)">Maria Caldas</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="JaymeWanderley">
+            <div id="JaymeWanderley" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Jayme Wanderley" id="JaymeWanderley" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="JaymeWanderley" onclick="info(event)">Jayme Wanderley</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="PauloMelo">
+            <div id="PauloMelo" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Paulo Melo" id="PauloMelo" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="PauloMelo" onclick="info(event)">Paulo Melo</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="ChicutaFernandes">
+            <div id="ChicutaFernandes" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Chicuta Fernandes" id="ChicutaFernandes" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="ChicutaFernandes" onclick="info(event)">Chicuta Fernandes</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="FilgueiraFilho">
+            <div id="FilgueiraFilho" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Filgueira Filho" id="FilgueiraFilho" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="FilgueiraFilho" onclick="info(event)">Filgueira Filho</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="JulitaCardoso">
+            <div id="JulitaCardoso" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Julita Cardoso" id="JulitaCardoso" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="JulitaCardoso" onclick="info(event)">Julita Cardoso</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="GeraldoOliveira">
+            <div id="GeraldoOliveira" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Geraldo Oliveira" id="GeraldoOliveira" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="GeraldoOliveira" onclick="info(event)">Geraldo Oliveira</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="ClementinoJunior">
+            <div id="ClementinoJunior" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Clementino Júnior" id="ClementinoJunior" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="ClementinoJunior" onclick="info(event)">Clementino Júnior</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="EiderMeneses">
+            <div id="EiderMeneses" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Eider Meneses" id="EiderMeneses" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="EiderMeneses" onclick="info(event)">Eider Meneses</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="PoncianoBarbosa">
+            <div id="PoncianoBarbosa" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Ponciano Barbosa" id="PoncianoBarbosa" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="PoncianoBarbosa" onclick="info(event)">Ponciano Barbosa</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="NewtonNavarro">
+            <div id="NewtonNavarro" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Newton Navarro" id="NewtonNavarro" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="NewtonNavarro" onclick="info(event)">Newton Navarro</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="NatiCortez">
+            <div id="NatiCortez" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Nati Cortez" id="NatiCortez" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="NatiCortez" onclick="info(event)">Nati Cortez</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="MeiraPires">
+            <div id="MeiraPires" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Meira Pires" id="MeiraPires" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="MeiraPires" onclick="info(event)">Meira Pires</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="JuniorDalberto">
+            <div id="JuniorDalberto" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Junior Dalberto" id="JuniorDalberto" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="JuniorDalberto" onclick="info(event)">Junior Dalberto</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="CostaFilho">
+            <div id="CostaFilho" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Costa Filho" id="CostaFilho" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="CostaFilho" onclick="info(event)">Costa Filho</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="JoaoLeite">
+            <div id="JoaoLeite" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="João Denys Araújo Leite" id="JoaoLeite" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="JoaoLeite" onclick="info(event)">João Denys Araújo Leite</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="LenícioQueiroga">
+            <div id="LenicioQueiroga" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Lenício Queiroga" id="LenicioQueiroga" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="LenicioQueiroga" onclick="info(event)">Lenício Queiroga</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="LuisWanderley">
+            <div id="LuisWanderley" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Luís Carlos Lins Wanderley" id="LuisWanderley" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="LuisWanderley" onclick="info(event)">Luís Carlos Lins Wanderley</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="IsabelGondim">
+            <div id="IsabelGondim" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Isabel Urbana de Albuquerque Gondim" id="IsabelGondim" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="IsabelGondim" onclick="info(event)">Isabel Urbana de Albuquerque Gondim</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="JoaquimFagundes">
+            <div id="JoaquimFagundes" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Joaquim Fagundes" id="JoaquimFagundes" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="JoaquimFagundes" onclick="info(event)">Joaquim Fagundes</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="EzequielWanderley">
+            <div id="EzequielWanderley" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Ezequiel Lins Wanderley" id="EzequielWanderley" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="EzequielWanderley" onclick="info(event)">Ezequiel Lins Wanderley</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="HenriqueSousa">
+            <div id="HenriqueSousa" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Henrique Castriciano de Sousa" id="HenriqueSousa" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="HenriqueSousa" onclick="info(event)">Henrique Castriciano de Sousa</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="CarolinaWanderley">
+            <div id="CarolinaWanderley" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Carolina Wanderley" id="CarolinaWanderley" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="CarolinaWanderley" onclick="info(event)">Carolina Wanderley</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="StelaBenevides">
+            <div id="StelaBenevides" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Stela Wanderley Benevides" id="StelaBenevides" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="StelaBenevides" onclick="info(event)">Stela Wanderley Benevides</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="PalmiraWanderley">
+            <div id="PalmiraWanderley" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Palmira Wanderley" id="PalmiraWanderley " onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="PalmiraWanderley" onclick="info(event)">Palmira Wanderley</p>
+            </div>
+        </span>
+        <span class="grow2 espaco dramaturgo" id="ClaricePalma">
+            <div id="ClaricePalma" class="dramaturgo grow2 artistadiv">
+                <img src="Artistas Imagens/Sem.png" alt="Clarice Palma" id="ClaricePalma" onclick="info(event)" class="imagemcinza">
+                <p class="tituloartista" id="ClaricePalma" onclick="info(event)">Clarice Palma</p>
+            </div>
+        </span>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/artistas.js"></script>
+
+</body>
+
+</html>

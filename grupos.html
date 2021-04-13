@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/grupos.css">
+    <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagens/favicon.ico">
+</head>
+
+<body class="fadein">
+    <div id="header-wrapper">
+        <div id="header" class="containerdrop">
+            <div id="logo">
+                <h1><a href="index.html"><img id="imgLogo" src="imagens/logo.png" alt=""></a></h1>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a onclick="myFunction()" class="dropbtn">ARTISTAS</a></li>
+                    <li><a href="dramaturgia.html" accesskey="2" title="">DRAMATURGIA</a></li>
+                    <li><a href="grupos.html" accesskey="3" title="">GRUPOS</a></li>
+                    <li><a onclick="myFunctionGaleria()" class="dropbtn" accesskey="4" title="">GALERIA</a></li>
+                    <li><a href="teatros.html" accesskey="5" title="">TEATROS</a></li>
+                    <div class="dropdown" id="dropdown">
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#" onclick="tipo(event)" id="todos">TODOS</a>
+                          <a href="#" onclick="tipo(event)" id="diretor">DIREÇÃO</a>
+                          <a href="#" onclick="tipo(event)" id="ator">ATUAÇÃO</a>
+                          <a href="#" onclick="tipo(event)" id="dramaturgo">DRAMATURGIA</a>
+                          <a href="#" onclick="tipo(event)" id="pesquisador">PESQUISA</a>
+                          <a href="#" onclick="tipo(event)" id="produtor">PRODUÇÃO</a>
+                          <a href="#" onclick="tipo(event)" id="cenógrafo">CENOGRAFIA</a>
+                          <a href="#" onclick="tipo(event)" id="figurinista">FIGURINO</a>
+                          <a href="#" onclick="tipo(event)" id="maquiador">MAQUIAGEM</a>
+                        </div>
+                        <div id="myDropdownGaleria" class="dropdown-contentGaleria">
+                            <a href="#" onclick="tipoGaleria(event)" id="todos">TODOS</a>
+                            <a href="#" onclick="tipoGaleria(event)" id="teatro">TEATROS</a>
+                            <a href="#" onclick="tipoGaleria(event)" id="artista">ARTISTAS</a>
+                            <a href="#" onclick="tipoGaleria(event)" id="evento">EVENTOS</a>
+                          </div>
+                      </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="pgrupos">
+        <div id="grupose">
+            <img src="Grupos Imagens/1.jpg" alt="" id="imagem1" class="imagemcinza">
+            <div id="grupose2">
+                    <h2>Clowns de Shakespeare</h2>
+                    <p>Criado em 1993 em Natal, Rio Grande do Norte, o Grupo de Teatro Clowns de Shakespeare vem, desde então, desenvolvendo uma investigação com foco na construção da presença cênica do ator, a musicalidade da cena e do corpo, teatro popular e comédia, sempre sob uma perspectiva colaborativa.</p>
+                    <a href="https://www.clowns.com.br/o-grupo/">Mais informações...</a>
+            </div>
+        </div>
+
+        <div id="grupos">
+            <div id="grupos2">
+                    <h2>Estação</h2>
+                    <p>Criado em 2009, o grupo natalense já se apresentou em mais de 17 estados. Inicialmente formado por Nara Kelly, Rogério Ferraz, Caio Padilha e Manu Azevedo, tem como conceito representativo a contação de histórias. Os espetáculos carregam sempre música e estética infantil. "Guerra, Formigas e Palhaços", "Em Cada Canto Um Conto", "Estação dos Contos", "Um Sonho de Rabeca no Reino da Bicharada", são alguns dos espetáculos que o grupo já encenou</p>
+                    <a href="https://www.grupoestacaodeteatro.com.br/">Mais informações...</a>
+            </div>
+            <img src="Grupos Imagens/2.png" alt="" id="imagem2" class="imagemcinza">
+        </div>
+        <div id="grupose">
+            <img src="Grupos Imagens/3.png" alt="" id="imagem1" class="imagemcinza">
+            <div id="grupose2">
+                    <h2>O Bololô</h2>
+                    <p>O Bololô foi fundado em 2009 e conta com os atores: Alex Cordeiro, Arlindo Bezerra, Luana Menezes, Paulinha Medeiros e Rodrigo Silbat. Surgiu de um desejo dos criadores: Arlindo Bezerra, Luana Menezes, Paulinha Medeiros, Rodrigo Silbat e João Paulo Silva da Rocha de experimentar as artes cênicas de uma maneira mais livre e horizontal. “TODO AVENTAL” (2011), “NA MESA COM O BOBO” (2012) e “RETRATO DO ARTISTA QUANDO COISA” (2012), são alguns dos espetáculos encenados. </p>
+                    <a href="http://bololociacenica.blogspot.com.br/">Mais informações...</a>
+            </div>
+        </div>
+
+        <div id="grupos">
+            <div id="grupos2">
+                    <h2>Carmin</h2>
+                    <p>Grupo Carmin de Teatro, formado em 2007 pelas atrizes Quitéria Kelly e Titina Medeiros. O grupo surge do desejo de encontrar comicidade em temas urbanos. O objetivo inicial do grupo era através da risada gerar uma reflexão. Os espetáculos antes de serem escritos, geralmente, contam com um trabalho de pesquisa aprofundado sobre a temática deles. Algumas das peças apresentadas pelo grupo são: “Pobres de Marré” (2007), “Jacy” (2013) e “A Invenção do Nordeste” (2017).</p>
+                    <a href="http://www.grupocarmin.com.br/">Mais informações...</a>
+            </div>
+            <img src="Grupos Imagens/4.png" alt="" id="imagem2" class="imagemcinza">
+        </div>
+
+        <div id="grupose">
+            <img src="Grupos Imagens/5.png" alt="" id="imagem1" class="imagemcinza">
+            <div id="grupose2">
+                    <h2>Arkhétypos</h2>
+                    <p>O Grupo nasceu em 2010, coordenado por Robson Haderchpek, docente do Curso de Teatro da UFRN, tem como foco apresentações de foco artístico ligado ao autoconhecimento e elementos da natureza como norte de criação. O grupo também opera em extensão e pesquisa além das encenações. “Santa Cruz do Não Sei”, “Mi Casa Su Casa”, “Aboiá”, são algumas das produções do Arkhétypos.</p>
+                    <a href="https://arkhetyposgrupodet.wixsite.com/arkhetypos/o-grupo">Mais informações...</a>
+            </div>
+        </div>
+
+        <div id="grupos">
+            <div id="grupos2">
+                    <h2>Atores à Deriva</h2>
+                    <p>Criado em 2007 pelo dramaturgo Henrique Fontes, teve como peça de estreia “A Mar Aberto”. O coletivo que atualmente conta com 6 integrantes, trabalha com pesquisa e montagem de peças de teatro. Focado em dramaturgia coletiva, o grupo realiza oficinas e ensaios abertos. 
+                        “Corte Sem Casca”, “Flúvio e o Mar” “O Cobrador” (monólogo) e “Recomendações a Todos”, são os espetáculos já apresentados pelo grupo.
+                        </p>
+                    <a href="https://atoresaderiva.blogspot.com/">Mais informações...</a>
+            </div>
+            <img src="Grupos Imagens/6.png" alt="" id="imagem2" class="imagemcinza">
+        </div>
+
+        <div id="grupose">
+            <img src="Grupos Imagens/7.png" alt="" id="imagem1" class="imagemcinza">
+            <div id="grupose2">
+                    <h2>Teatro Interrompido</h2>
+                    <p>Criado em 2012 por Juão Nin e Carol Piñeiro a companhia oferece cursos, realizam intervenções, criação de curta metragens e, obviamente, montagem de espetáculos. “Brutal” e “Não Pise na Dama”, são algumas das montagens realizada pelo grupo.</p>
+                    <a href="https://teatrointerrompido.wordpress.com/">Mais informações...</a>
+            </div>
+        </div>
+
+        <div id="grupos">
+            <div id="grupos2">
+                    <h2>A Máscara de Teatro</h2>
+                    <p>Foi criada em 1999 por Tony Silva e Damásio Costa na cidade de Mossoró, tem foco empresarial, porém também oferece oficinas nas cidades onde passam com os espetáculos. No princípio só realizavam esquetes, no entanto, em 2004 a companhia monta a primeira peça teatral “A viagem de Um Barquinho”, voltada ao público infantil.  “Medéia”, “Deus Danado”, “A viagem aos Campos de Alfenim” e “A Farsa”, são exemplos de espetáculos que o grupo apresentou.
+                        </p>
+                    <a href="http://www.amascaradeteatro.com.br/">Mais informações...</a>
+            </div>
+            <img src="Grupos Imagens/8.png" alt="" id="imagem2" class="imagemcinza">
+        </div>
+
+        <div id="grupose">
+            <img src="Grupos Imagens/9.png" alt="" id="imagem1" class="imagemcinza">
+            <div id="grupose2">
+                    <h2>Pão Doce</h2>
+                    <p>A companhia surgiu em 2002 de uma apresentação comemorativa na cidade Mossoró, a proximidade e conexão dos atores os uniu como grupo. Possui um caráter de pesquisa focado na presença do ator e de elementos musicais em cena, além de realizarem saraus. Diferente de muitos grupos teatrais, Cia. Pão Doce possui uma sede fixa na cidade de criação. “Eu Chovo, tu Choves, ele Chove”, "Meus Bons Tempos", "Sonho de Cinderela", "À luz do luar", são alguns dos espetáculos que ganharam vida nas mãos da companhia.</p>
+                    <a href="https://www.ciapaodoce.com/">Mais informações...</a>
+            </div>
+        </div>
+
+        <div id="grupos">
+            <div id="grupos2">
+                    <h2>Pele de Fulô</h2>
+                    <p>O grupo surgiu por meio do mestrado da Carla Pires Martins, atriz e preparadora corporal. Possuindo um caráter investigativo, o grupo não foca somente na montagem de espetáculos, mas também oferece oficinas. Alguns espetáculos montados pelo grupo são: “Cravo do Canavial”, “Circulação”, “Tombo da Rainha”, entre outros.</p>
+                    <a href="https://peledefulo.wixsite.com">Mais informações...</a>
+            </div>
+            <img src="Grupos Imagens/10.png" alt="" id="imagem2" class="imagemcinza">
+        </div>
+
+        <div id="grupose">
+            <img src="Grupos Imagens/11.png" alt="" id="imagem1" class="imagemcinza">
+            <div id="grupose2">
+                    <h2>Trapiá</h2>
+                    <p>Grupo dirigido por Lourival Andrade, surgiu em 2014 com a proposta de encenar obras literárias e científicas. O grupo encorpa artistas de diversas áreas como: música, artes plásticas e pesquisa. O processo de seleção e montagem dos espetáculos são realizados de maneira coletiva exaltando um dos valores do Trapiá. “Chico Jararaca”, “Menino Pássaro” e “P’s” são algumas das montagens realizadas por eles.</p>
+                    <a href="https://www.trapia.org/">Mais informações...</a>
+            </div>
+        </div>
+
+        <div id="grupos">
+            <div id="grupos2">
+                    <h2>Sociedade T</h2>
+                    <p>A Sociedade T é um grupo de Natal que nasceu em 2013 definido como um agrupamento de artistas. Os cinco membros focam na pesquisa da cena teatral contemporânea e além de peças também realizam exposições e performances. “Para Onde Voam os Pássaros” e “Tratados de Mim Mesma na Infertilidade” são espetáculos montados pelo grupo.</p>
+                    <a href="https://www.instagram.com/sociedadet/">Mais informações...</a>
+            </div>
+            <img src="Grupos Imagens/12.png" alt="" id="imagem2" class="imagemcinza">
+        </div>
+
+        <div id="grupose">
+            <img src="Grupos Imagens/13.png" alt="" id="imagem1" class="imagemcinza">
+            <div id="grupose2">
+                    <h2>Facetas, Mutretas e Outras Histórias</h2>
+                    <p>O grupo nasceu há 21 anos de uma ideia de alunos da Escola Estadual B. Wanderley em
+                        Natal e se profissionalizou 7 anos após sua criação. O grupo possui um aspecto
+                        educativo o que, por conseguinte, os fazem sempre realizar ações em escolas que
+                        englobam aspectos teatrais, música e dança. Há uma preocupação do grupo de passar
+                        para o público os valores pregados e o poder da cultura popular. Alguns dos espetáculos
+                        realizados pelo grupo foram: “O Casamento Suspeitoso”, "O Bizarro Sonho de Steven",
+                       " Sal, Menino Mar", entre outros.</p>
+                    <a href="https://facetasmutretas.blogspot.com/p/portifolio.html">Mais informações...</a>
+            </div>
+        </div>
+
+        <div id="grupos">
+            <div id="grupos2">
+                    <h2>Interferências</h2>
+                    <p>O grupo da cidade de Natal foi criado em 2017 e vem realizando espetáculos,
+                        audiocenas, mostras e projetos desde então. A equipe leva como princípio o diálogo
+                        com a classe teatral e a ocupação de espaços alternativos para as apresentações. Tem
+                        caráter experimental e, atualmente, conta com seis artistas participantes. “Mauricio”,
+                        “Provisório”, “A Lenda do Namorado” e "Eu e a Vizinha n° 2020" são algumas das
+                        produções no grupo.</p>
+                    <a href="https://www.facebook.com/grupointerferencias">Mais informações...</a>
+            </div>
+            <img src="Grupos Imagens/14.png" alt="" id="imagem2" class="imagemcinza">
+        </div>
+
+        <div id="grupose">
+            <img src="Grupos Imagens/15.png" alt="" id="imagem1" class="imagemcinza">
+            <div id="grupose2">
+                    <h2>Asavessa</h2>
+                    <p>Presente no cenário teatral natalense desde 2017, o grupo surgiu de uma proposta do
+                        laboratório de cena, ministrado pelo grupo Clowns de Shakespeare. O grupo conta com
+                        os cinco integrantes: Caju Dantas, José de Medeiros, Camilla Custódio, Deborah
+                        Custódio e Leo Ravir. Eles estrearam com o espetáculo “Julieta mais Romeu”, um
+                        grande sucesso que rendeu a participação do grupo em diversos festivais como: Tramas,
+                        FETEAG em Caruaru, Mostra Sesc de Culturas Cariri, entre outros.</p>
+                    <a href="https://www.facebook.com/grupoasavessa/">Mais informações...</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/grupos.js"></script>
+
+</body>
+
+</html>

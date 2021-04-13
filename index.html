@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TEATRAR</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="icon" href="imagens/favicon.ico">
+<link rel="stylesheet" href="css/glide.core.css">
+<link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="containerdrop">
+		<div id="logo">
+			<h1><a href="index.html"><img id="imgLogo" src="imagens/logo.png" alt=""></a></h1>
+			<!--teste-->
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a onclick="myFunction()" class="dropbtn">ARTISTAS</a></li>
+				<li><a href="dramaturgia.html" accesskey="2" title="">DRAMATURGIA</a></li>
+				<li><a href="grupos.html" accesskey="3" title="">GRUPOS</a></li>
+				<li><a onclick="myFunctionGaleria()" class="dropbtn" accesskey="4" title="">GALERIA</a></li>
+				<li><a href="teatros.html" accesskey="5" title="">TEATROS</a></li>
+				<div class="dropdown" id="dropdown">
+					<div id="myDropdown" class="dropdown-content">
+						<a href="#" onclick="tipo(event)" id="todos">TODOS</a>
+                          <a href="#" onclick="tipo(event)" id="diretor">DIREÇÃO</a>
+                          <a href="#" onclick="tipo(event)" id="ator">ATUAÇÃO</a>
+                          <a href="#" onclick="tipo(event)" id="dramaturgo">DRAMATURGIA</a>
+                          <a href="#" onclick="tipo(event)" id="pesquisador">PESQUISA</a>
+                          <a href="#" onclick="tipo(event)" id="produtor">PRODUÇÃO</a>
+						  <a href="#" onclick="tipo(event)" id="cenógrafo">CENOGRAFIA</a>
+                          <a href="#" onclick="tipo(event)" id="figurinista">FIGURINO</a>
+                          <a href="#" onclick="tipo(event)" id="maquiador">MAQUIAGEM</a>
+					</div>
+					<div id="myDropdownGaleria" class="dropdown-contentGaleria">
+						<a href="#" onclick="tipoGaleria(event)" id="todos">TODOS</a>
+						<a href="#" onclick="tipoGaleria(event)" id="teatro">TEATROS</a>
+						<a href="#" onclick="tipoGaleria(event)" id="artista">ARTISTAS</a>
+						<a href="#" onclick="tipoGaleria(event)" id="evento">EVENTOS</a>
+					  </div>
+				  </div>
+			</ul>
+		</div>
+	</div>
+	<div id="banner" class="container"><span>HISTÓRIA DO <br> TEATRO POTIGUAR</span></div>
+</div>
+<div id="wrapper">
+	<div id="staff" class="container">
+		<div class="title">
+			<h2>BIBLIOTECA VIRTUAL</h2>
+			<span>De um apanhado histórico sobre o teatro no Rio Grande do Norte</span> </div>
+		<div class="boxA">
+			<div class="glide">
+			<div class="glide__track" data-glide-el="track">
+			  <ul class="glide__slides">
+				<li class="glide__slide"><img src="Imagens Index/pic01.jpg" width="300" height="450" alt="Dix-Huit Rosado" class="imagemcinza"/></li>
+				<li class="glide__slide"><img src="Imagens Index/pic01-02.jpg" width="300" height="450" alt="Dix-Huit Rosado" class="imagemcinza"/></li>
+				<li class="glide__slide"><img src="Imagens Index/pic01-03.jpg" width="300" height="450" alt="Dix-Huit Rosado" class="imagemcinza"/></li>
+				<li class="glide__slide"><img src="Imagens Index/pic05.jpg" width="300" height="450" alt="Teatro Pedro Amorim" class="imagemcinza"/></li>
+				<li class="glide__slide"><img src="Imagens Index/pic05-02.jpg" width="300" height="450" alt="Teatro Pedro Amorim" class="imagemcinza"/></li>
+				<li class="glide__slide"><img src="Imagens Index/pic05-03.jpg" width="300" height="450" alt="Teatro Pedro Amorim" class="imagemcinza"/></li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+		<div class="boxB">
+			<div class="glide2">
+				<div class="glide__track" data-glide-el="track">
+				  <ul class="glide__slides">
+					<li class="glide__slide"><img src="Imagens Index/pic02.jpg" width="300" height="450" alt="Alberto Maranhão" class="imagemcinza"/></li>
+					<li class="glide__slide"><img src="Imagens Index/pic02-02.jpg" width="300" height="450" alt="Alberto Maranhão" class="imagemcinza"/></li>
+					<li class="glide__slide"><img src="Imagens Index/pic02-03.jpg" width="300" height="450" alt="Alberto Maranhão" class="imagemcinza"/></li>
+					<li class="glide__slide"><img src="Imagens Index/pic04.jpg" width="300" height="450" alt="Teatro de Parnamirim" class="imagemcinza"/></li>
+					<li class="glide__slide"><img src="Imagens Index/pic04-02.jpg" width="300" height="450" alt="Teatro de Parnamirim" class="imagemcinza"/></li>
+					<li class="glide__slide"><img src="Imagens Index/pic04-03.jpg" width="300" height="450" alt="Teatro de Parnamirim" class="imagemcinza"/></li>
+				  </ul>
+				</div>
+			  </div>
+		</div>
+		<div class="boxC">
+			<div class="glide3">
+				<div class="glide__track" data-glide-el="track">
+				  <ul class="glide__slides">
+					<li class="glide__slide"><img src="Imagens Index/pic03.jpg" width="300" height="450" alt="Casa da Ribeira" class="imagemcinza"/></li>
+					<li class="glide__slide"><img src="Imagens Index/pic03-02.jpg" width="300" height="450" alt="Casa da Ribeira" class="imagemcinza"/></li>
+					<li class="glide__slide"><img src="Imagens Index/pic03-03.jpg" width="300" height="450" alt="Casa da Ribeira" class="imagemcinza"/></li>
+					<li class="glide__slide"><img src="Imagens Index/pic06.jpg" width="300" height="450" alt="Teatro de Cultura Popular" class="imagemcinza"/></li>
+					<li class="glide__slide"><img src="Imagens Index/pic06-02.jpg" width="300" height="450" alt="Teatro de Cultura Popular" class="imagemcinza"/></li>
+					<li class="glide__slide"><img src="Imagens Index/pic06-03.jpg" width="300" height="450" alt="Teatro de Cultura Popular" class="imagemcinza"/></li>
+				  </ul>
+				</div>
+			  </div>
+		</div>
+	</div>
+	<div id="page" class="container">
+		<div class="boxA">
+			<h2>ACESSE O CANAL DO TEATRAR NO YOUTUBE</h2>
+			<ul class="style4">
+				<li><img src="imagens/Racine.png" alt="Racine" width="120" height="72" > <a href="https://youtu.be/dco3g3T1a2g">Racine Santos</a></li>
+				<li><img src="imagens/ivonete.png" alt="ivonete" width="120" height="72"> <a href="https://youtu.be/Xkt59hgBy28">Ivonete Albano</a></li>
+				<li><img src="imagens/othon.png" alt="othon" width="120" height="72"> <a href="https://youtu.be/kv_zWv74mhc">Sônia Othon</a></li>
+			</ul>
+		</div>
+		<div class="boxB">
+			<h2>Datas importantes<br />
+				<span> Para saber mais </span></h2>
+			<ul class="style3">
+				<li class="first">
+					<p class="date"><a href="#">Mar<b>1904</b></a></p>
+					<h3>Inauguração do Alberto Maranhão</h3>
+					<p><br></p>
+				</li>
+				<li>
+					<p class="date"><a href="#">Out<b>08</b></a></p>
+					<h3>Aniversário de Newton Navarro</h3>
+					<p><br></p>
+				</li>
+			</ul>
+		</div>
+		<div class="boxC">
+			<h2>Sigam Nossas Redes Sociais </h2>
+			<ul class="style4">
+				<li><h3>@<a href="https://www.instagram.com/">HistoriarIG</a></h3></li>
+				<li><h3>@<a href="https://www.instagram.com/rebekacarozza/">RebekaCarozza</a></h3></li>
+				<li><h3>@<a href="https://www.instagram.com/chaconbolinho/">Chaconbolinho</a></h3></li>
+				<li><h3>@<a href="https://www.instagram.com/dixx.galadino/">Dicc.Galdino</a></h3></li>
+				<li><h3>@<a href="https://www.instagram.com/gil_araujjo/">Gil_araujo</a></h3></li>
+			</ul>
+		</div>
+	</div>
+	<div id="welcome" class="container">
+		<div class="title">
+			<h2>Bem-Vindo ao Nosso Site</h2>
+		</div>
+		<p>Este site é fruto do projeto <strong>História do Teatro no Rio Grande do Norte: Uma Investigação Preliminar</strong>, que teve seu início no ano de 2019 no campus <a href="https://portal.ifrn.edu.br/campus/parnamirim" rel="nofollow">IFRN PARNAMIRIM</a>, com o objetivo de tornar mais acessível a história do teatro norte-rio-grandense, disponibilizando à comunidade diversos documentos, relatos e obras sem quaisquer fins lucrativos.</p>
+	</div>
+</div>
+<div id="copyright" class="container">
+	<p>Realização Nuarte IFRN Campus Parnamirim</p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script>
+	new Glide('.glide', {
+  type: 'carousel',
+  autoplay: 3000,
+  hoverpause: true,
+}).mount()
+</script>
+<script>
+	new Glide('.glide2', {
+  type: 'carousel',
+  autoplay: 3000,
+  hoverpause: true,
+}).mount()
+</script>
+<script>
+	new Glide('.glide3', {
+  type: 'carousel',
+  autoplay: 3000,
+  hoverpause: true,
+}).mount()
+</script>
+</body>
+</html>
